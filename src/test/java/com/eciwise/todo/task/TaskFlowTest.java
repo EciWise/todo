@@ -1,9 +1,15 @@
 package com.eciwise.todo.task;
 
-import com.eciwise.todo.task.dto.ReorderRequest;
-import com.eciwise.todo.task.dto.StatsResponse;
-import com.eciwise.todo.task.dto.TaskMutationResponse;
-import com.eciwise.todo.task.dto.TaskRequest;
+import com.eciwise.todo.task.application.dto.ReorderRequest;
+import com.eciwise.todo.task.application.dto.StatsResponse;
+import com.eciwise.todo.task.application.dto.TaskMutationResponse;
+import com.eciwise.todo.task.application.dto.TaskRequest;
+import com.eciwise.todo.task.application.service.StatsService;
+import com.eciwise.todo.task.application.service.TaskService;
+import com.eciwise.todo.task.domain.model.Importance;
+import com.eciwise.todo.task.domain.model.RecurrenceEndType;
+import com.eciwise.todo.task.domain.model.RecurrenceFreq;
+import com.eciwise.todo.task.domain.model.TaskStatus;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

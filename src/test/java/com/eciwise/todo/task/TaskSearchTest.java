@@ -1,7 +1,9 @@
 package com.eciwise.todo.task;
 
-import com.eciwise.todo.task.dto.TaskRequest;
-import com.eciwise.todo.task.dto.TaskResponse;
+import com.eciwise.todo.task.application.dto.TaskRequest;
+import com.eciwise.todo.task.application.dto.TaskResponse;
+import com.eciwise.todo.task.application.service.TaskService;
+import com.eciwise.todo.task.domain.model.Importance;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
