@@ -1,8 +1,13 @@
 package com.eciwise.todo.task;
 
-import com.eciwise.todo.task.dto.AchievementResponse;
-import com.eciwise.todo.task.dto.TaskMutationResponse;
-import com.eciwise.todo.task.dto.TaskRequest;
+import com.eciwise.todo.task.application.dto.AchievementResponse;
+import com.eciwise.todo.task.application.dto.TaskMutationResponse;
+import com.eciwise.todo.task.application.dto.TaskRequest;
+import com.eciwise.todo.task.application.service.AchievementService;
+import com.eciwise.todo.task.application.service.TaskService;
+import com.eciwise.todo.task.domain.model.AchievementType;
+import com.eciwise.todo.task.domain.model.Importance;
+import com.eciwise.todo.task.domain.model.TaskStatus;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
